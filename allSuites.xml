@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="allSuites" parallel="none" allow-return-values="true"
+	preserve-order="true">
+	<suite-files>
+		<suite-file path="testXMLs/Browser.xml" />
+	</suite-files>
+</suite>

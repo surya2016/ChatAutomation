@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="BrowserTest" thread-count="1" parallel="none">
+	<parameter name="Browser" value="Chrome"></parameter>
+	<test name="BrowserTest">
+		<groups>
+			<run>
+				<include name="functional" />
+			</run>
+		</groups>
+		<classes>
+			<class name="app.chatroom.common.BrowserOpenCloseTest" />
+		</classes>
+	</test>
+</suite>
