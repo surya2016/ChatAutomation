@@ -1,9 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="MultiUserCallTest" thread-count="1" parallel="none">
+<suite name="MultiUserCallTest" thread-count="2" parallel="tests">
 	<parameter name="Group" value="functional"></parameter>
-	<parameter name="Browser" value="Chrome"/>
 	<test name="MultiUserCallTest">
+		<parameter name="Browser" value="Chrome"/>
 		<groups>
 			<run>
 				<include name="functional"/>
@@ -14,8 +14,8 @@
 			<class name="app.chatroom.testcases.MutiUserCallTest"/>
 		</classes>
 	</test>
-	<parameter name="Browser" value="FireFox"/>
 	<test name="MultiUserCallTest1">
+		<parameter name="Browser" value="FireFox"/>
 		<groups>
 			<run>
 				<include name="functional"/>
