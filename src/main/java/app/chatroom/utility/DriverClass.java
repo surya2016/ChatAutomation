@@ -1,10 +1,13 @@
 package app.chatroom.utility;
 
 import java.io.IOException;
+import java.util.HashMap;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
@@ -30,17 +33,33 @@ public class DriverClass {
 					System.getProperty("user.dir")
 					+PropertiesLoader.prop.getProperty("resourcePath")
 					+"chromedriver");
+			ChromeOptions options = new ChromeOptions();
 			
-			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\abhinav.a.malhotra\\Desktop\\drivers\\chromedriver");
-			driver = new ChromeDriver();
+			HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+			chromePrefs.put("profile.default_content_setting_values.media_stream_mic", 1);
+			chromePrefs.put("profile.default_content_setting_values.media_stream_camera", 1);
+			
+			options.setExperimentalOption("prefs", chromePrefs);
+			
+			driver = new ChromeDriver(options);
 		}
 		else if(browser.equalsIgnoreCase("Firefox")) {
 			
 			System.setProperty("webdriver.gecko.driver", 
 					System.getProperty("user.dir")
 					+PropertiesLoader.prop.getProperty("resourcePath")
-					+"geekodriver");
-			driver = new FirefoxDriver();
+					+"geckodriver");
+			//driver = new FirefoxDriver();
+			
+			FirefoxOptions opt = new FirefoxOptions();
+			
+			opt.addPreference("permissions.default.microphone", 1);
+			opt.addPreference("permissions.default.camera", 1);
+			
+			/*opt.setBinary(System.getProperty("user.dir")
+					+PropertiesLoader.prop.getProperty("resourcePath")
+					+"geckodriver");*/
+			driver = new FirefoxDriver(opt);
 		} 
 		
 		driver.manage().deleteAllCookies();

@@ -1,5 +1,7 @@
 package app.chatroom.testcases;
 
+import static org.testng.Assert.assertTrue;
+
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
@@ -76,26 +78,17 @@ public class MutiUserCallTest {
 		
 		Log.info("Going to Chat Room");
 		
-		if(ExpectedConditions.visibilityOf(chatRoom.getCamera())!=null)
-		{
-			chatRoom.getCamera().click();
-			driver.switchTo().alert().accept();
-			
-		}
-		
-		if(ExpectedConditions.visibilityOf(chatRoom.getMicrophone())!=null)
-		{
-			chatRoom.getMicrophone().click();
-			driver.switchTo().alert().accept();
-		}
-		
 		chatRoom.getJoinCallButton().click();
 		
+		assertTrue((new WebDriverWait(driver, 1000)).until(ExpectedConditions.visibilityOf(call.checkLanderContainer()))!=null, "Call Successfully joined by another user");
+		try {
+			Thread.sleep(20000);
+		} catch (InterruptedException e) {
 		
-		if((new WebDriverWait(driver, 1000)).until(ExpectedConditions.invisibilityOf(call.checkLanderContainer())))
-		{
-			Log.info("Call Successfully joined by another user");
+			e.printStackTrace();
 		}
+		System.out.println("Ending..");
+		
 		
 	}
 }

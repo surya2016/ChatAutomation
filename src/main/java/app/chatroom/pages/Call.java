@@ -12,7 +12,7 @@ public class Call {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath=".//*[@class='lander-instructions-container']")
+	@FindBy(xpath=".//*[@class='sc-jhAzac gOEbWJ']")   
 	private WebElement landerContainer;
 	
 	public WebElement checkLanderContainer()
