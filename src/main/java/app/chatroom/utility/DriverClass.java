@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
@@ -29,14 +30,17 @@ public class DriverClass {
 					System.getProperty("user.dir")
 					+PropertiesLoader.prop.getProperty("resourcePath")
 					+"chromedriver");
+			
+			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\abhinav.a.malhotra\\Desktop\\drivers\\chromedriver");
 			driver = new ChromeDriver();
 		}
 		else if(browser.equalsIgnoreCase("Firefox")) {
+			
 			System.setProperty("webdriver.gecko.driver", 
 					System.getProperty("user.dir")
 					+PropertiesLoader.prop.getProperty("resourcePath")
 					+"geekodriver");
-			driver = new ChromeDriver();
+			driver = new FirefoxDriver();
 		} 
 		
 		driver.manage().deleteAllCookies();
