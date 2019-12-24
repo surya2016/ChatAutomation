@@ -92,7 +92,7 @@ public class MutiUserCallTest {
 		chatRoom.getJoinCallButton().click();
 		
 		
-		if((new WebDriverWait(driver, 500)).until(ExpectedConditions.invisibilityOf(call.checkLanderContainer())))
+		if((new WebDriverWait(driver, 1000)).until(ExpectedConditions.invisibilityOf(call.checkLanderContainer())))
 		{
 			Log.info("Call Successfully joined by another user");
 		}

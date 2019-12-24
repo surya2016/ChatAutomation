@@ -9,7 +9,6 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 
-import app.chatroom.utility.Constants;
 import app.chatroom.utility.DriverClass;
 import app.chatroom.utility.TestNGListeners;
 
@@ -19,7 +18,6 @@ public class BrowserOpenCloseTest {
 	@Parameters("Browser")
 	@BeforeTest(alwaysRun=true)
 	public void browerOpen(@Optional("Chrome") String browser) throws IOException{
-		Constants.browser =browser;
 		
 		new DriverClass(browser);
 		

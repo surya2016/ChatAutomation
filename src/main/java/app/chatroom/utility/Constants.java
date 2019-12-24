@@ -10,8 +10,6 @@ public class Constants {
 	public static String class_Name = null;
 	public static String method_Name = null;
 	
-	public static String browser = null;
-	
 	//Variables to be used for capturing and storing the start and end time of each of the test cases
 	public static double class_Start_Time = 0, class_End_Time = 0;
 	public static double testcase_Start_Time = 0, testcase_End_Time = 0;
