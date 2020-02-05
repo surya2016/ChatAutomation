@@ -2,7 +2,7 @@
 
 <suite name="MultiUserCallTest" thread-count="2" parallel="tests">
 	<parameter name="Group" value="functional"></parameter>
-	<test name="MultiUserCallTest">
+	<test name="MultiUserCallTest1">
 		<parameter name="Browser" value="Chrome"/>
 		<groups>
 			<run>
@@ -14,7 +14,7 @@
 			<class name="app.chatroom.testcases.MutiUserCallTest"/>
 		</classes>
 	</test>
-	<test name="MultiUserCallTest1">
+	<test name="MultiUserCallTest2">
 		<parameter name="Browser" value="FireFox"/>
 		<groups>
 			<run>

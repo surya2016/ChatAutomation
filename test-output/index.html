@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-BrowserTest">
-              <span class="suite-name border-passed">BrowserTest</span>
+            <a href="#" class="navigator-link" panel-name="suite-MultiUserCallTest">
+              <span class="suite-name border-passed">MultiUserCallTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-BrowserTest">
-                    <span>Browser.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-MultiUserCallTest">
+                    <span>MultiUserCallTest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-BrowserTest">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" class="navigator-link " panel-name="testlist-MultiUserCallTest">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-BrowserTest">
-                    <span>0 groups</span>
+                  <a href="#" class="navigator-link " panel-name="group-MultiUserCallTest">
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-BrowserTest">
+                  <a href="#" class="navigator-link " panel-name="times-MultiUserCallTest">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-BrowserTest">
+                  <a href="#" class="navigator-link " panel-name="reporter-MultiUserCallTest">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-BrowserTest">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-MultiUserCallTest">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-BrowserTest">
+                  <a href="#" class="navigator-link " panel-name="chronological-MultiUserCallTest">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">2 methods,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-MultiUserCallTest" class="hide-methods passed suite-MultiUserCallTest"> (hide)</a> <!-- hide-methods passed suite-MultiUserCallTest -->
+                      <a href="#" panel-name="suite-MultiUserCallTest" class="show-methods passed suite-MultiUserCallTest"> (show)</a> <!-- show-methods passed suite-MultiUserCallTest -->
+                    </span>
+                    <div class="method-list-content passed suite-MultiUserCallTest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MultiUserCallTest" title="app.chatroom.testcases.MutiUserCallTest" hash-for-method="multiUserCallTest">multiUserCallTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MultiUserCallTest" title="app.chatroom.testcases.MutiUserCallTest" hash-for-method="multiUserCallTest">multiUserCallTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-MultiUserCallTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -102,37 +121,35 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-BrowserTest" class="panel BrowserTest">
-        </div> <!-- panel BrowserTest -->
         <div panel-name="suite-allSuites" class="panel allSuites">
         </div> <!-- panel allSuites -->
-        <div panel-name="test-xml-BrowserTest" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/suryakhanna/eclipse-workspace/ChatAppAutomation/testXMLs/Browser.xml</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-            <pre>
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;BrowserTest&quot;&gt;
-  &lt;parameter name=&quot;Browser&quot; value=&quot;Chrome&quot;/&gt;
-  &lt;test name=&quot;BrowserTest&quot;&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;functional&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;app.chatroom.common.BrowserOpenCloseTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- BrowserTest --&gt;
-&lt;/suite&gt; &lt;!-- BrowserTest --&gt;
-            </pre>
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
+        <div panel-name="suite-MultiUserCallTest" class="panel MultiUserCallTest">
+          <div class="suite-MultiUserCallTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">app.chatroom.testcases.MutiUserCallTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="multiUserCallTest">
+                  </a> <!-- multiUserCallTest -->
+                  <span class="method-name">multiUserCallTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="multiUserCallTest">
+                  </a> <!-- multiUserCallTest -->
+                  <span class="method-name">multiUserCallTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MultiUserCallTest-class-passed -->
+        </div> <!-- panel MultiUserCallTest -->
         <div panel-name="test-xml-allSuites" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/suryakhanna/eclipse-workspace/ChatAppAutomation/allSuites.xml</span>
+            <span class="header-content">/home/suryakhanna/Git/Personal Git/Chat Automation/allSuites.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -140,22 +157,48 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;allSuites&quot; allow-return-values=&quot;true&quot;&gt;
   &lt;suite-files&gt;
-    &lt;suite-file path=&quot;testXMLs/Browser.xml&quot;/&gt;
+    &lt;suite-file path=&quot;testXMLs/MultiUserCallTest.xml&quot;/&gt;
   &lt;/suite-files&gt;
 &lt;/suite&gt; &lt;!-- allSuites --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-BrowserTest" class="panel">
+        <div panel-name="test-xml-MultiUserCallTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for BrowserTest</span>
+            <span class="header-content">/home/suryakhanna/Git/Personal Git/Chat Automation/testXMLs/MultiUserCallTest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <ul>
-              <li>
-                <span class="test-name">BrowserTest (1 class)</span>
-              </li>
-            </ul>
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;MultiUserCallTest&quot; parallel=&quot;tests&quot;&gt;
+  &lt;parameter name=&quot;Group&quot; value=&quot;functional&quot;/&gt;
+  &lt;test name=&quot;MultiUserCallTest1&quot;&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;functional&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;app.chatroom.common.BrowserOpenCloseTest&quot;/&gt;
+      &lt;class name=&quot;app.chatroom.testcases.MutiUserCallTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- MultiUserCallTest1 --&gt;
+  &lt;test name=&quot;MultiUserCallTest2&quot;&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;FireFox&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;functional&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;app.chatroom.common.BrowserOpenCloseTest&quot;/&gt;
+      &lt;class name=&quot;app.chatroom.testcases.MutiUserCallTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- MultiUserCallTest2 --&gt;
+&lt;/suite&gt; &lt;!-- MultiUserCallTest --&gt;
+            </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="testlist-allSuites" class="panel">
@@ -167,11 +210,19 @@
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-BrowserTest" class="panel">
+        <div panel-name="testlist-MultiUserCallTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for BrowserTest</span>
+            <span class="header-content">Tests for MultiUserCallTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">MultiUserCallTest1 (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">MultiUserCallTest2 (2 classes)</span>
+              </li>
+            </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="group-allSuites" class="panel">
@@ -181,28 +232,19 @@
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-BrowserTest" class="panel">
+        <div panel-name="group-MultiUserCallTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for BrowserTest</span>
+            <span class="header-content">Groups for MultiUserCallTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="times-div">
-              <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_BrowserTest');
-function tableData_BrowserTest() {
-var data = new google.visualization.DataTable();
-data.addColumn('number', 'Number');
-data.addColumn('string', 'Method');
-data.addColumn('string', 'Class');
-data.addColumn('number', 'Time (ms)');
-data.addRows(0);
-window.suiteTableData['BrowserTest']= { tableData: data, tableDiv: 'times-div-BrowserTest'}
-return data;
-}
-              </script>
-              <div id="times-div-BrowserTest">
-              </div> <!-- times-div-BrowserTest -->
-            </div> <!-- times-div -->
+            <div class="test-group">
+              <span class="test-group-name">functional</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">multiUserCallTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-allSuites" class="panel">
@@ -229,11 +271,37 @@ return data;
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-BrowserTest" class="panel">
+        <div panel-name="times-MultiUserCallTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for BrowserTest</span>
+            <span class="header-content">Times for MultiUserCallTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_MultiUserCallTest');
+function tableData_MultiUserCallTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'multiUserCallTest')
+data.setCell(0, 2, 'app.chatroom.testcases.MutiUserCallTest')
+data.setCell(0, 3, 33980);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'multiUserCallTest')
+data.setCell(1, 2, 'app.chatroom.testcases.MutiUserCallTest')
+data.setCell(1, 3, 31388);
+window.suiteTableData['MultiUserCallTest']= { tableData: data, tableDiv: 'times-div-MultiUserCallTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-MultiUserCallTest">
+              </div> <!-- times-div-MultiUserCallTest -->
+            </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="reporter-allSuites" class="panel">
@@ -243,9 +311,9 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-BrowserTest" class="panel">
+        <div panel-name="reporter-MultiUserCallTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">Reporter output for MultiUserCallTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -257,25 +325,11 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-BrowserTest" class="panel">
+        <div panel-name="ignored-methods-MultiUserCallTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Methods in chronological order</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="chronological-class">
-              <div class="chronological-class-name">app.chatroom.common.BrowserOpenCloseTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">browerOpen(Chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">browserClose</span>
-                <span class="method-start">63 ms</span>
-              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-allSuites" class="panel">
@@ -283,6 +337,55 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-MultiUserCallTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">app.chatroom.common.BrowserOpenCloseTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">browerOpen(Chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">browerOpen(FireFox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">app.chatroom.testcases.MutiUserCallTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">prerequisites(functional)</span>
+                <span class="method-start">2928 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">multiUserCallTest</span>
+                <span class="method-start">3056 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class before">
+                <span class="method-name">prerequisites(functional)</span>
+                <span class="method-start">5903 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">multiUserCallTest</span>
+                <span class="method-start">5930 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">app.chatroom.common.BrowserOpenCloseTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">browserClose</span>
+                <span class="method-start">37041 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browserClose</span>
+                <span class="method-start">37319 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

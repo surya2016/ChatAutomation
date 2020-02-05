@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [MultiUserCallTest]" parallel="tests">
+  <parameter name="Group" value="functional"/>
+  <parameter name="Browser" value="FireFox"/>
+  <test name="MultiUserCallTest2(failed)" parallel="tests">
+    <parameter name="Browser" value="FireFox"/>
+    <groups>
+      <run>
+        <include name="functional"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="app.chatroom.common.BrowserOpenCloseTest">
+        <methods>
+          <include name="browserClose"/>
+          <include name="browserClose"/>
+          <include name="browerOpen"/>
+          <include name="browerOpen"/>
+        </methods>
+      </class> <!-- app.chatroom.common.BrowserOpenCloseTest -->
+      <class name="app.chatroom.testcases.MutiUserCallTest">
+        <methods>
+          <include name="prerequisites"/>
+          <include name="prerequisites"/>
+          <include name="multiUserCallTest"/>
+        </methods>
+      </class> <!-- app.chatroom.testcases.MutiUserCallTest -->
+    </classes>
+  </test> <!-- MultiUserCallTest2(failed) -->
+</suite> <!-- Failed suite [MultiUserCallTest] -->

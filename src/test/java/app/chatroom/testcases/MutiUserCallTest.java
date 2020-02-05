@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -19,7 +20,9 @@ import app.chatroom.utility.Constants;
 import app.chatroom.utility.DriverClass;
 import app.chatroom.utility.Log;
 import app.chatroom.utility.PropertiesLoader;
+import app.chatroom.utility.TestNGListeners;
 
+@Listeners({TestNGListeners.class})
 public class MutiUserCallTest {
 
 	
@@ -51,8 +54,6 @@ public class MutiUserCallTest {
 		//Log info to mark start of test class
 		Log.startTestCase();
 		Log.info(Constants.class_Name, "Start ChatRoom");
-		
-		//
 		
 		//Delete all cookies to clear the cart item, if any are left
 		driver.manage().deleteAllCookies();

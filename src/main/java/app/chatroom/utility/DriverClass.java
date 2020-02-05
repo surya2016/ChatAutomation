@@ -49,16 +49,12 @@ public class DriverClass {
 					System.getProperty("user.dir")
 					+PropertiesLoader.prop.getProperty("resourcePath")
 					+"geckodriver");
-			//driver = new FirefoxDriver();
 			
 			FirefoxOptions opt = new FirefoxOptions();
 			
 			opt.addPreference("permissions.default.microphone", 1);
 			opt.addPreference("permissions.default.camera", 1);
 			
-			/*opt.setBinary(System.getProperty("user.dir")
-					+PropertiesLoader.prop.getProperty("resourcePath")
-					+"geckodriver");*/
 			driver = new FirefoxDriver(opt);
 		} 
 		
